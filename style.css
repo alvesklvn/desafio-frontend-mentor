@@ -1,0 +1,105 @@
+@font-face {
+    font-family: "DMSans";
+    src: url(bento-grid-main/assets/fonts/DMSans-VariableFont_opsz\,wght.ttf);
+}
+
+@font-face {
+    font-family: "DMSans-Italic";
+    src: url(bento-grid-main/assets/fonts/DMSans-Italic-VariableFont_opsz\,wght.ttf);
+}
+
+*{
+    font-family: "DMSans";
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container{
+    padding: 10px;
+    height: 800px;
+    width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr 0.5fr 1fr 1.5fr;
+    gap: 20px;
+}
+
+.item{
+    border-radius: 9px;
+}
+
+.item:nth-child(1){
+    padding: 25px;
+    font-weight: 500;
+    font-size: 2.3rem;
+    background-color: hsl(31, 66%, 93%);
+    grid-area: 1 / 1 / 4 / 1;
+}
+
+.item:nth-child(1) span{
+    color: hsl(256, 67%, 59%);
+}
+
+.item:nth-child(1) img{
+    margin-top: 15px;
+    width: 185px;
+}
+
+.item:nth-child(2){
+    padding: 50px 25px 0px 25px;
+    background-color: hsl(256, 67%, 59%);
+    grid-area: 1 / 2 / 3 / 4;
+    color: white;
+    font-weight: 560;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.item:nth-child(2) span{
+    color: hsl(39, 100%, 71%);
+}
+
+.item:nth-child(2) img{
+    width: 200px;
+}
+
+.item:nth-child(2) p{
+    font-size: medium;
+    font-weight: lighter;
+}
+
+.item:nth-child(3){
+    background-color: palevioletred;
+    grid-area: 1 / 4 / 5 / 4;
+}
+
+.item:nth-child(4){
+    background-color: aquamarine;
+    grid-area: 3 / 2 / 5 / 2;
+}
+
+.item:nth-child(5){
+    background-color: violet;
+    grid-area: 3 / 3 / 5 / 3;
+}
+
+.item:nth-child(6){
+    background-color: antiquewhite;
+    grid-area: 4 / 1 / 6 / 1;
+}
+
+.item:nth-child(7){
+    background-color: yellow;
+}
+
+.item:nth-child(8){
+    background-color: tomato;
+    grid-area: 5 / 3 / 5 / 5;
+}
